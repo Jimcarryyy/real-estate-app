@@ -1,0 +1,226 @@
+#nav-container {
+  position: relative;
+}
+.nav-wrapper {
+  background-image: url("/images/Banner.png");
+  /* from public folder */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+}
+#x-mark {
+  width: 24px;
+  height: 24px;
+  color: var(--color-white);
+  position: absolute;
+  top: 12px;
+  right: 25px;
+  padding: 10px;
+  background-color: #303030;
+  border-radius: 30px;
+  opacity: 0.9;
+  cursor: pointer;
+}
+.nav-wrapper h3,
+.nav-wrapper a {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--color-white);
+  line-height: 150%;
+}
+.nav-wrapper-2,
+.sub-wrapper-1,
+.sub-wrapper-2 nav ul {
+  display: flex;
+  flex-direction: row;
+}
+.nav-wrapper-2 {
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 0;
+  background-color: var(--grey-10);
+  color: var(--color-white);
+}
+.sub-wrapper-1 {
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.sub-wrapper-2 nav ul {
+  justify-content: center;
+  align-items: center;
+}
+.sub-wrapper-2 nav ul li a {
+  color: var(--color-white);
+  text-decoration: none;
+  font-size: 18px;
+}
+.sub-wrapper-2 nav ul li {
+  list-style: none;
+  font-weight: 500;
+  padding: 15px 20px;
+  border: 2px solid transparent;
+}
+.sub-wrapper-2 nav ul li.active {
+  background-color: var(--grey-08);
+  border: 2px solid var(--grey-15);
+  border-radius: 10px;
+}
+.sub-wrapper-3 #contact-us {
+  background-color: var(--grey-08);
+  border: 2px solid var(--grey-15);
+  border-radius: 10px;
+  padding: 15px 20px;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  color: var(--color-white);
+  cursor: pointer;
+}
+
+/* Small laptops / tablets (landscape) */
+@media (max-width: 1024px) {
+  .nav-wrapper {
+    justify-content: flex-start;
+  }
+  .nav-wrapper-2 {
+    justify-content: space-between;
+    padding: 10px 20px;
+  }
+  .sub-wrapper-3 #contact-us,
+  .sub-wrapper-2 nav ul li a {
+    font-size: 16px;
+  }
+  .sub-wrapper-2 nav ul li,
+  .sub-wrapper-3 #contact-us {
+    padding: 10px 15px;
+  }
+  #logo {
+    width: 45px;
+    height: 45px;
+  }
+}
+.mobile-nav-wrapper {
+    display: none;
+}
+#bars {
+    width: 28px;
+    height: 28px;
+    color: var(--color-white);
+}
+.mobile-nav-wrap,
+.mobile-sub-nav-1  {
+    display: flex;
+    flex-direction: row;
+}
+.mobile-sub-nav-1 {
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: var(--grey-10);
+    border-bottom: 2px solid var(--grey-15);
+}
+.mobile-nav-wrap h2 {
+    color: var(--color-white);
+}
+.mobile-nav-wrap {
+    align-items: center;
+    gap: 10px;
+}
+.mobile-sub-nav-2 {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--grey-10);
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 30px;
+    padding-top: 15px;
+}
+/* Tablets (portrait) */
+@media (max-width: 768px) {
+  .nav-wrapper h3,
+  .nav-wrapper a {
+    font-size: 16px;
+  }
+  #x-mark {
+    width: 20px;
+    height: 20px;
+    right: 10px;
+  }
+  .nav-wrapper-2 {
+    display: none;
+  }
+  .mobile-nav-wrapper {
+    display: block;
+  }
+  #logo {
+    width: 40px;
+    height: 40px;
+  }
+  .mobile-nav-wrap h2 {
+    font-size: 22px;
+  }
+  .sub-wrapper-2 nav ul {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    padding: unset;
+  }
+  .sub-wrapper-2 {
+    margin-bottom: 10px;
+  }
+
+}
+
+/* Large phones */
+@media (max-width: 600px) {
+  .nav-wrapper h3,
+  .nav-wrapper a {
+    font-size: 14px;
+  }
+
+  #x-mark {
+    width: 18px;
+    height: 18px;
+  }
+  #logo {
+    width: 38px;
+    height: 38px;
+  }
+  .mobile-nav-wrap h2 {
+    font-size: 20px;
+  }
+  #bars {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+/* Medium phones */
+@media (max-width: 480px) {
+  .nav-wrapper h3,
+  .nav-wrapper a {
+    font-size: 11px;
+  }
+
+  #x-mark {
+    width: 15px;
+    height: 15px;
+    padding: 8px;
+  }
+}
+
+/* Small phones */
+@media (max-width: 360px) {
+  .nav-wrapper h3,
+  .nav-wrapper a {
+    font-size: 9px;
+  }
+}
