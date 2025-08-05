@@ -31,32 +31,36 @@ function NavigationBar() {
           d="M6 18 18 6M6 6l12 12"
         />
       </svg>
-      <div className="nav-wrapper">
-        <h3>Discover Your Dream Property with Estatein</h3>
-        <a href="#">Learn More</a>
+      <div className="nav-wrapper-parent">
+        <div className="nav-wrapper">
+          <h3>Discover Your Dream Property with Estatein</h3>
+          <a href="#">Learn More</a>
+        </div>
       </div>
-      <div className="nav-wrapper-2">
-        <div className="sub-wrapper-1">
-          <img id="logo" src={Logo} alt="Logo" />
-          <h2>Estatein</h2>
-        </div>
-        <div className="sub-wrapper-2">
-          <nav>
-            <ul>
-              {["Home", "About Us", "Properties", "Services"].map((name) => (
-                <li
-                  key={name}
-                  className={activeNav === name ? "active" : ""}
-                  onClick={() => handleNavClick(name)}
-                >
-                  <a href="#">{name}</a>
-                </li>
-              ))}
-            </ul>
-          </nav>
-        </div>
-        <div className="sub-wrapper-3">
-          <button id="contact-us">Contact Us</button>
+      <div className="nav-wrapper-parent-2">
+        <div className="nav-wrapper-2">
+          <div className="sub-wrapper-1">
+            <img id="logo" src={Logo} alt="Logo" />
+            <h2>Estatein</h2>
+          </div>
+          <div className="sub-wrapper-2">
+            <nav>
+              <ul>
+                {["Home", "About Us", "Properties", "Services"].map((name) => (
+                  <li
+                    key={name}
+                    className={activeNav === name ? "active" : ""}
+                    onClick={() => handleNavClick(name)}
+                  >
+                    <a href="#">{name}</a>
+                  </li>
+                ))}
+              </ul>
+            </nav>
+          </div>
+          <div className="sub-wrapper-3">
+            <button id="contact-us">Contact Us</button>
+          </div>
         </div>
       </div>
       <div className="mobile-nav-wrapper">

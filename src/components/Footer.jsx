@@ -8,16 +8,18 @@ function Footer() {
   return (
     <div className="footer-container">
       <div className="footer-banner-1"></div>
-      <div className="footer-banner-2">
-        <div className="footer-copyrights">
-          <p>@2023 Estatein. All Rights Reserved.</p>
-          <p>Terms & Conditions</p>
-        </div>
-        <div className="footer-socmed-icons">
-          <img src={fb_icon} alt="Icon" />
-          <img src={lk_icon} alt="Icon" />
-          <img src={x_icon} alt="Icon" />
-          <img src={yt_icon} alt="Icon" />
+      <div className="footer-hero-banner-2">
+        <div className="footer-banner-2">
+          <div className="footer-copyrights">
+            <p>@2023 Estatein. All Rights Reserved.</p>
+            <p>Terms & Conditions</p>
+          </div>
+          <div className="footer-socmed-icons">
+            <img src={fb_icon} alt="Icon" />
+            <img src={lk_icon} alt="Icon" />
+            <img src={x_icon} alt="Icon" />
+            <img src={yt_icon} alt="Icon" />
+          </div>
         </div>
       </div>
     </div>

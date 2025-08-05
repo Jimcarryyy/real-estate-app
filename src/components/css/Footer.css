@@ -1,35 +1,42 @@
+.footer-hero-banner-2 {
+  background-color: var(--grey-10);
+}
 
-.footer-banner-2{
-    background-color: var(--grey-10);
-    padding: 20px 150px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+.footer-banner-2 {
+  padding: 20px 0;
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
+
 .footer-copyrights {
-    display: flex;
-    flex-direction: row;
-    gap: 30px;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
 }
+
 .footer-copyrights p {
-    color: var(--color-white);
-    font-weight: 500;
-    font-size: 18px;
+  color: var(--color-white);
+  font-weight: 500;
+  font-size: 18px;
 }
+
 .footer-socmed-icons {
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
 }
+
 .footer-socmed-icons img {
-    background-color: var(--grey-08);
-    padding: 14px;
-    border-radius: 30px;
-    cursor: pointer;
+  background-color: var(--grey-08);
+  padding: 14px;
+  border-radius: 30px;
+  cursor: pointer;
 }
 
 
@@ -38,16 +45,6 @@
   .footer-copyrights p {
     font-size: 17px;
   }
-  .footer-banner-2 {
-    padding: 20px 90px;
-  }
-}
-
-/* Medium desktops / laptops */
-@media (max-width: 1280px) {
-  .footer-banner-2 {
-    padding: 20px 50px;
-  }
 }
 
 /* Small laptops / tablets (landscape) */
@@ -55,33 +52,42 @@
   .footer-copyrights p {
     font-size: 16px;
   }
+
   .footer-socmed-icons img {
     width: 20px;
     height: 20px;
   }
+
   .footer-copyrights {
     gap: 15px;
+  }
+
+  .footer-banner-2 {
+    width: 90%;
   }
 }
 
 /* Tablets (portrait) */
 @media (max-width: 768px) {
-   .footer-banner-2 {
+  .footer-banner-2 {
     flex-direction: column;
     gap: 20px;
-   }
+    align-items: flex-start;
+  }
+
+  .footer-copyrights {
+    flex-direction: column;
+  }
 }
 
 /* Large phones */
 @media (max-width: 600px) {
-    .footer-copyrights p {
-        font-size: 14px;
-    }
+  .footer-copyrights p {
+    font-size: 14px;
+  }
+
   .footer-socmed-icons img {
     width: 16px;
     height: 16px;
-  }
-  .footer-banner-2 {
-    padding: 20px;
   }
 }
