@@ -1,4 +1,5 @@
 import CTA from "../components/CTA";
+import Footer from "../components/Footer";
 import NavigationBar from "../components/NavigationBar";
 
 function HomePage() {
@@ -6,6 +7,7 @@ function HomePage() {
     <div id="home-container">
       <NavigationBar />
       <CTA />
+      <Footer />
     </div>
   );
 }
